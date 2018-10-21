@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    {% load staticfiles %}
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="{% static 'images/favicon_sun.png' %}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" ></link>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" ></link>
+
+        <link rel="stylesheet" href="{% static 'bootstrap/bootstrap.css'%}"/>
+        <link rel="stylesheet" href="{% static 'bootstrap/bootstrap-grid.css'%}"/>
+        <link rel="stylesheet" href="{% static 'bootstrap/bootstrap-reboot.css'%}"/>
+    <link rel="stylesheet" href="{% static 'css/styles.css'%}"/>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!--  <scritp src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <scritp src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <scritp src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>-->
+    <scritp src="{% static 'js/index.js' %}"></script>
+
+
+        <title> Enegia SC - Instalação de Painés Solares </title>
+        </head>
+        <body>
+        <header>
+        <div class="collapse bg-light" id="navbarHeader">
+            <div class="container">
+            <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">Sobre a proposta</h4>
+        <p class="text-muted">O objetivo da Energia SC é oferecer soluções de produção local de eletricidade. Cada
+        casa, empresa, instituição tem o direito e o privilégio de produzir sua própria eletricidade. Limpa, renovável,
+            sem emissão de gases do efeito estufa.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-black">Contato</h4>
+            <ul class="list-unstyled">
+            <li><a href="#" class="text-black">Sobre a equipe</a></li>
+        <li><a href="#" class="text-black">Like on Facebook</a></li>
+        <li><a href="{% url 'admin:index' %}" class="text-black">Admin</a></li>
+        <li><a href="" class="text-black">Go to the Main Page</a></li>
+        <li><a href="mailto:adrielwerlich@gmail.com" class="text-white">Email me</a></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="navbar navbar-light bg-white shadow-sm">
+            <div class="container d-flex ">
+            <a href="{% url 'indexPage' %}" class="navbar-brand d-flex align-items-center ">
+            <img src="{% static 'images/logo_energiasc1.png' %}" height=120 width=180 margin-right="10px" class="d-inline-block alighn-top"/>
+
+            </a>
+
+            <nav class="navbar navbar-expand-md bg-white navbar-light offset-3">
+            <!-- Brand -->
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar2">
+
+            </div>
+            </nav>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+            </div>
+            </header>
+            <div id="solar_carouselslide" class="carousel slide" data-ride="carousel" >
+            <ol class="carousel-indicators">
+            <li data-target="#solar_carouselslide" data-slide-to="0" class="active"></li>
+            <li data-target="#solar_carouselslide" data-slide-to="1"></li>
+            <li data-target="#solar_carouselslide" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" >
+
+            <div class="carousel-item"><img src="{% static 'images/spa (3).jpg' %}" class="img-fluid d-block"alt="img4">
+            <div class="carousel-caption d-none d-md-block">
+            <h5>Tecnologias Limpas São o Futuro</h5>
+        <p>Os combustíveis fósseis vão acabar. Além disso, não são fontes limpas!</p>
+        </div>
+        </div>
+        <div class="carousel-item "><img src="{% static 'images/spa (2).jpg' %}" class="img-fluid "alt="img6">
+            <div class="carousel-caption d-none d-md-block ">
+            <h5>Seja um produtor de eletricidade</h5>
+        <p>Se você produz sua própria eletricidade, não precisa pagar por ela para ninguém</p>
+        </div>
+        </div>
+        <div class="carousel-item active"><img src="{% static 'images/spa (1).jpg' %}" class="img-fluid "alt="img6">
+            <div class="carousel-caption d-none d-md-block ">
+            <h5>A eletricidade está cara e cada vez mais difícil de se obter</h5>
+        <p>As fontes tradicionais de geração de eletricidade estão cada vez mais escassas e caras</p>
+        </div>
+        </div>
+        </div>
+        <a class="carousel-control-prev" href="#solar_carouselslide" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#solar_carouselslide" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+            </div>
+
+
+            <div class="formContato offset-3" >
+            <p id="p_orcamento">Solicite um orçamento preenchendo o formulário abaixo:</p>
+        <form id="formSolicitacao" name="formSolicitacao" method="post" >
+            <input class="ipt col-7" id="nome_cliente" name="nome_cliente" type="text"
+                placeholder="nome" required><br/>
+            <input class="ipt col-7" id="email_cliente" name="email_cliente" type="email"
+                placeholder="email" required><br/>
+            <input class="ipt col-7" id="tel_cliente" name="tel_cliente" type="text"
+                placeholder="telefone" required><br/>
+            <textarea id="mensagem_cliente" class="col-8" name="mensagem_cliente" placeholder="mensagem"></textarea>
+        </form>
+
+        </div>
+
+
+        </body>
+        </html>

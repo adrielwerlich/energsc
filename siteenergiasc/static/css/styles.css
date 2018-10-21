@@ -1,0 +1,43 @@
+.logo_comment{
+    font-size:30px;
+}
+.formContato {
+    padding: 50px 0;
+}
+
+#p_orcamento {
+    color: #004a9b;
+    font-size: 18px;
+    font-weight: bold;
+}
+/*.carousel-inner > .item > img{*/
+/*margin:auto;*/
+    /*float:right;*/
+    /*align:center;*/
+/*}*/
+
+/*.carousel-inner>.item.active, .carousel-inner>.item.next.left, .carousel-inner>.item.prev.right {*/
+    /*text-align: -webkit-center;*/
+
+/*}*/
+
+/*.tales {*/
+  /*width: 100%;*/
+/*}*/
+.carousel-inner{
+  /*width:100%;*/
+    display: flex;
+  justify-content: center;
+  max-height: 380px !important;
+}
+
+.ipt {
+    padding: 3px;
+    margin: 2px;
+}
+/*.item{*/
+/*text-align:center;*/
+/*}*/
+.carousel-item {
+/*display:inline-block  !important;*/
+}
